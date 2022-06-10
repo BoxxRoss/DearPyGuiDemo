@@ -1,0 +1,13 @@
+import random
+my_float = random.randint(1, 100)
+
+while True:
+    guess = float(input("Guess the magic number! (1-100) : "))
+    (round(guess,2))
+    if guess == my_float:
+        print("Correct!")
+        break
+    elif guess > my_float:
+        print("Too high!")
+    elif guess < my_float:
+        print("Too low!")
